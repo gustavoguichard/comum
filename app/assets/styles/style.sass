@@ -14,11 +14,11 @@ body
   color: $black
   text-align: center
 
-h1, h2, h3, h4, .we_are span
+h1, h2, h3, h4
   font-family: 'Fjalla One', sans-serif
   text-transform: uppercase
 
-h3, .we_are span
+h3
   font-size: relative-size(24,18)
 
 a
@@ -31,13 +31,10 @@ ul
   &.roles
     text-transform: lowercase
     +context('.we_are')
-      float: left
-      margin-left: 10%
+      width: 100%
       margin-bottom: relative-size(20,18)
       +apply-to(less-than, ipad-portrait)
-        clear: left
         margin: 0 auto relative-size(60,18)
-        width: 100%
 
 .we_are, .looking_for, .be_use, .endorse, #footer_share
   padding: relative-size(30,18) relative-size(20,18)
@@ -75,20 +72,10 @@ ul
     width: 33%
     position: relative
     float: left
-    min-width: 350px
-
-    span
-      position: relative
-      float: left
-      margin-left: 10%
-      top: 4em
 
     +apply-to(less-than, ipad-portrait)
       width: 100%
-      span
-        top: 0
-        margin: 0 auto
-        width: 100%
+
 .group
   width: 70%
   margin: 0 auto

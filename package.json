@@ -1,5 +1,5 @@
 {
-  "name": "helloExpress",
+  "name": "Comum.cc",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,19 +7,8 @@
   },
   "dependencies": {
     "express": "3.0.6",
-    "express-resource": "~1",
     "jade": "latest",
-    "mongoose": "latest",
-    "nodemon": "latest",
-    "coffee-script": "latest",
-    "grunt-clean": "latest",
-    "grunt-coffee": "latest",
-    "grunt-compass": "latest",
-    "grunt-contrib-copy": "latest",
-    "grunt-contrib-watch": "latest",
-    "grunt-smushit": "latest",
-    "grunt-yui-compressor": "latest",
-    "node-compass": "latest"
+    "coffee-script": "latest"
   },
   "engines": {
     "node": "0.8.x",

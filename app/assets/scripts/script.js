@@ -7,7 +7,7 @@ $(function() {
   $logo = $('#logo');
   logoX = parseInt($logo.offset().left);
   logoY = parseInt($logo.offset().top);
-  shadowOffset = 1.06;
+  shadowOffset = 1.02;
   $logoShadow.css({
     left: logoX,
     top: logoY
@@ -24,13 +24,13 @@ $(function() {
     distanceY = logoY - mouseY;
     distance = Math.sqrt(Math.pow(distanceX, 2) + Math.pow(distanceY, 2));
     shadowDistance = distance * shadowOffset;
-    shadowPosLeft = (distanceX / distance * shadowDistance + mouseX) + "px";
-    shadowPosTop = (distanceY / distance * shadowDistance + mouseY) + "px";
+    shadowPosLeft = distanceX / distance * shadowDistance + mouseX;
+    shadowPosTop = distanceY / distance * shadowDistance + mouseY;
     return $logoShadow.css({
-      left: shadowPosLeft,
-      top: shadowPosTop,
+      left: shadowPosLeft + "px",
+      top: shadowPosTop + "px",
       opacity: setOpacity(shadowDistance)
     });
   };
-  return $mainHeader.on('mousemove', moveShadow);
+  return $(document).on('mousemove', moveShadow);
 });
