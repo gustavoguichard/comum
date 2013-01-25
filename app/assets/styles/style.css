@@ -97,35 +97,49 @@ textarea {
   resize: vertical;
 }
 
-/* line 9, style.sass */
+/* line 36, semantic-mixins/_css3-support.sass */
+::selection {
+  text-shadow: none;
+  color: white;
+  background: #8b5189;
+}
+
+/* line 40, semantic-mixins/_css3-support.sass */
+::-moz-selection {
+  text-shadow: none;
+  color: white;
+  background: #8b5189;
+}
+
+/* line 12, style.sass */
 body {
   font-family: Georgia, Times, "Times New Roman", serif;
   color: #222222;
   text-align: center;
 }
 
-/* line 14, style.sass */
+/* line 17, style.sass */
 h1, h2, h3, h4, .we_are span {
   font-family: "Fjalla One", sans-serif;
   text-transform: uppercase;
 }
 
-/* line 18, style.sass */
+/* line 21, style.sass */
 h3, .we_are span {
   font-size: 1.33333em;
 }
 
-/* line 21, style.sass */
+/* line 24, style.sass */
 a {
   color: #00b7ff;
   font-weight: bold;
 }
 
-/* line 25, style.sass */
+/* line 28, style.sass */
 ul {
   list-style: none;
 }
-/* line 28, style.sass */
+/* line 31, style.sass */
 ul.roles {
   text-transform: lowercase;
 }
@@ -144,32 +158,34 @@ ul.roles {
   }
 }
 
-/* line 39, style.sass */
+/* line 42, style.sass */
 .we_are, .looking_for, .be_use, .endorse, #footer_share {
   padding: 1.66667em 1.11111em;
 }
 
-/* line 42, style.sass */
+/* line 45, style.sass */
 .looking_for, .endorse {
   color: white;
   background: #222222;
 }
 
-/* line 46, style.sass */
+/* line 49, style.sass */
 #main_header {
   width: 100%;
   padding: 5.55556em 0 7.22222em;
   background: url(../img/bg1.jpg) no-repeat fixed;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4) inset;
   background-size: contain;
+  position: relative;
+  overflow: hidden;
 }
 @media only screen and (max-width: 980px) {
-  /* line 46, style.sass */
+  /* line 49, style.sass */
   #main_header {
     background-size: cover;
   }
 }
-/* line 55, style.sass */
+/* line 60, style.sass */
 #main_header #logo {
   text-indent: -119988px;
   overflow: hidden;
@@ -180,20 +196,35 @@ ul.roles {
   width: 190px;
   background-image: url(../img/comum-logo.png);
   margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+/* line 66, style.sass */
+#main_header #logo-shadow {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  display: block;
+  background-repeat: no-repeat;
+  height: 180px;
+  width: 202px;
+  background-image: url(../img/logo-shadow.png);
+  position: absolute;
+  z-index: 2;
 }
 
-/* line 59, style.sass */
+/* line 71, style.sass */
 .we_are {
   overflow: hidden;
 }
-/* line 62, style.sass */
+/* line 74, style.sass */
 .we_are .group {
   width: 33%;
   position: relative;
   float: left;
   min-width: 350px;
 }
-/* line 68, style.sass */
+/* line 80, style.sass */
 .we_are .group span {
   position: relative;
   float: left;
@@ -201,11 +232,11 @@ ul.roles {
   top: 4em;
 }
 @media only screen and (max-width: 768px) {
-  /* line 62, style.sass */
+  /* line 74, style.sass */
   .we_are .group {
     width: 100%;
   }
-  /* line 76, style.sass */
+  /* line 88, style.sass */
   .we_are .group span {
     top: 0;
     margin: 0 auto;
@@ -213,65 +244,65 @@ ul.roles {
   }
 }
 
-/* line 80, style.sass */
+/* line 92, style.sass */
 .group {
   width: 70%;
   margin: 0 auto;
   position: relative;
 }
 @media only screen and (max-width: 768px) {
-  /* line 80, style.sass */
+  /* line 92, style.sass */
   .group {
     width: 100%;
   }
 }
 
-/* line 87, style.sass */
+/* line 99, style.sass */
 .looking_for {
   overflow: hidden;
 }
-/* line 90, style.sass */
+/* line 102, style.sass */
 .looking_for h3, .looking_for p {
   float: left;
   width: 33%;
 }
 @media only screen and (max-width: 768px) {
-  /* line 90, style.sass */
+  /* line 102, style.sass */
   .looking_for h3, .looking_for p {
     clear: left;
     width: 100%;
     margin-bottom: 1.11111em;
   }
 }
-/* line 98, style.sass */
+/* line 110, style.sass */
 .looking_for h3 {
   margin-top: 1em;
 }
 
-/* line 101, style.sass */
+/* line 113, style.sass */
 .be_use, .endorse {
   min-height: 50px;
 }
-/* line 104, style.sass */
+/* line 116, style.sass */
 .be_use h3, .be_use p, .endorse h3, .endorse p {
   margin-bottom: 1.11111em;
 }
-/* line 107, style.sass */
+/* line 119, style.sass */
 .be_use h3, .endorse h3 {
   position: absolute;
   left: 0;
 }
 @media only screen and (max-width: 768px) {
-  /* line 107, style.sass */
+  /* line 119, style.sass */
   .be_use h3, .endorse h3 {
     position: static;
   }
 }
-/* line 113, style.sass */
+/* line 125, style.sass */
 .be_use .btns, .endorse .btns {
   margin-top: 2em;
 }
-/* line 116, style.sass */
+/* line 128, style.sass */
 .be_use a.btn, .endorse a.btn {
   color: white;
   background: #222222;
@@ -281,14 +312,14 @@ ul.roles {
   margin: 0.3em;
   white-space: nowrap;
 }
-/* line 125, style.sass */
+/* line 137, style.sass */
 .be_use a.btn:hover, .endorse a.btn:hover {
   background: #3c3c3c;
   text-shadow: 1px 1px 1px black;
   box-shadow: 0 0 8px black inset;
 }
 
-/* line 131, style.sass */
+/* line 143, style.sass */
 #footer_share .fb-like {
   margin: 0 auto;
   display: block;

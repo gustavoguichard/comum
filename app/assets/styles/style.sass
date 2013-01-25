@@ -5,6 +5,9 @@
 +css-techniques(18)
 
 $black: #222
++selection
+  color: white
+  background: rgb(139, 81, 137)
 
 body
   font-family: Georgia, Times, "Times New Roman", serif
@@ -49,12 +52,21 @@ ul
   background: url(../img/bg1.jpg) no-repeat fixed
   box-shadow: 0 -2px 10px rgba(black, .4) inset
   background-size: contain
+  position: relative
+  overflow: hidden
   +apply-to(less-than, ipad-landscape)
     background-size: cover
 
   #logo
     +image-replace("comum-logo.png")
     margin: 0 auto
+    position: relative
+    z-index: 10
+
+  #logo-shadow
+    +image-replace("logo-shadow.png")
+    position: absolute
+    z-index: 2
 
 .we_are
   overflow: hidden
