@@ -281,8 +281,14 @@ ul.roles {
   margin: 0.3em;
   white-space: nowrap;
 }
+/* line 125, style.sass */
+.be_use a.btn:hover, .endorse a.btn:hover {
+  background: #3c3c3c;
+  text-shadow: 1px 1px 1px black;
+  box-shadow: 0 0 8px black inset;
+}
 
-/* line 126, style.sass */
+/* line 131, style.sass */
 #footer_share .fb-like {
   margin: 0 auto;
   display: block;
