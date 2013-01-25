@@ -1,0 +1,10 @@
+mixin roles_list(roles)
+  ul.roles
+    each role in roles
+      li #{role}
+
+mixin split_p(p)
+  p
+    each exp in p
+      | #{exp}
+      br

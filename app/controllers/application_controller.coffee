@@ -24,4 +24,4 @@ module.exports = (app, configuration)->
       app.use express.errorHandler()
 
 module.exports.index = (req, res)->
-  res.render 'index', config: @config, title: 'Hey'
+  res.render 'index', config: @config
