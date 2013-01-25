@@ -6,29 +6,36 @@ block content
     h1#logo= config.app.pretty_url
 
   section.we_are
-    span Somos um/uma
-    mixin roles_list(['Marca', 'Símbolo', 'Movimento', 'Comunidade', 'Bandeira', 'Insígnia', 'Grupo', 'Nome', 'Ideia', 'Rede'])
+    .group
+      span Somos um/uma
+      mixin roles_list(['Marca', 'Símbolo', 'Movimento', 'Comunidade', 'Bandeira', 'Insígnia', 'Grupo', 'Nome', 'Ideia', 'Rede'])
 
-    span 100%
-    mixin roles_list(['Compartilhada', 'Open Source', 'Autônoma', 'Gratuita', 'Livre', 'Aberta', 'Coletiva', 'Distribuída', 'Colaborativa', 'Auto-gestionada'])
+    .group
+      span 100%
+      mixin roles_list(['Compartilhada', 'Open Source', 'Autônoma', 'Gratuita', 'Livre', 'Aberta', 'Coletiva', 'Distribuída', 'Colaborativa', 'Auto-gestionada'])
 
-    span que faz
-    mixin roles_list(['Arte', 'Ações', 'Projetos', 'Negócios', 'Tecnologia', 'Comunicação', 'Encontros', 'Produtos', 'Serviços', 'Coisas'])
+    .group
+      span que faz
+      mixin roles_list(['Arte', 'Ações', 'Projetos', 'Negócios', 'Tecnologia', 'Comunicação', 'Encontros', 'Produtos', 'Serviços', 'Coisas'])
 
   section.looking_for
-    h3 Buscamos
-    mixin split_p(['formar,', 'preservar e', 'desenvolver'])
-    mixin split_p(['pessoas,', 'ecossistemas', 'e comunidades'])
+    .group
+      h3 Buscamos
+      mixin split_p(['formar,', 'preservar e', 'desenvolver'])
+      mixin split_p(['pessoas,', 'ecossistemas', 'e comunidades'])
 
   section.be_use
-    h3 Seja e use
-    mixin split_p(['como quiser', 'sem moderação', 'como lhe conviér', 'quando tiver necessidade'])
-    aside.btns
-      a.btn(href="#") Lista de e-mails
-      a.btn(href="#") Download da marca
+    .group
+      h3 Seja e use
+      mixin split_p(['como quiser', 'sem moderação', 'como lhe conviér', 'quando tiver necessidade'])
+      aside.btns
+        a.btn(href="#") lista de e-mails
+        a.btn(href="#") download da marca
 
   section.endorse
-    h3 Endossam
+    .group
+      h3 Endossam
+
 
   footer#footer_share
     .fb-like(data-href="http://comum.cc", data-send="true", data-width="450", data-show-faces="true")
