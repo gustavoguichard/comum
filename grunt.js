@@ -28,7 +28,9 @@ module.exports = function(grunt) {
         dest: 'app/assets/styles/',
         outputstyle: 'expanded',
         linecomments: true,
-        images: '/public/img'
+        images: 'public/img',
+        relativeassets: false,
+        forcecompile: true
       }
     },
     cssmin: {
@@ -54,7 +56,7 @@ module.exports = function(grunt) {
     watch: {
       process: {
         files: ['app/assets/styles/**/*.sass', 'app/assets/images/*', 'app/assets/scripts/**/*coffee'],
-        tasks: 'compass cssmin smushit'
+        tasks: 'compass cssmin'
       }
     }
   });
