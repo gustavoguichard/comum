@@ -77,7 +77,7 @@ ul
       width: 100%
 
 .group
-  width: 70%
+  width: 75%
   margin: 0 auto
   position: relative
   +apply-to(less-than, ipad-portrait)
@@ -125,6 +125,18 @@ ul
       background: lighten($black, 10%)
       text-shadow: 1px 1px 1px black
       box-shadow: 0 0 8px black inset
+
+.brands
+  overflow: hidden
+  padding-top: 2em
+
+  img
+    +grayscale(90%)
+    +transition(all .6s)
+    padding: .5em
+
+    &:hover
+      +grayscale(0%)
 
 #footer_share
   .fb-like

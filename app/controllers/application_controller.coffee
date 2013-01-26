@@ -24,4 +24,9 @@ module.exports = (app, configuration)->
       app.use express.errorHandler()
 
 module.exports.index = (req, res)->
-  res.render 'index', config: @config
+  brands = [
+    {name: "Engage", img: "engage.png", url: "http://engage.is"}
+    {name: "Matéria Brasil", img: "mb.png", url: "http://materiabrasil.com"}
+    {name: "Nos.vc", img: "nosvc.png", url: "http://nos.vc"}
+  ]
+  res.render 'index', config: @config, brands: brands

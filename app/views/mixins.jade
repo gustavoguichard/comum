@@ -8,3 +8,9 @@ mixin split_p(p)
     each exp in p
       | #{exp}
       br
+
+mixin brands(brands)
+  .brands
+    each brand in brands
+      a(href="#{brand.url}", title="#{brand.name}", target="_blank")
+        img(src="img/#{brand.img}")
