@@ -29,3 +29,6 @@ $ ->
       opacity: setOpacity(shadowDistance)
 
   $(document).on 'mousemove', moveShadow
+  $(window).on 'resize', ->
+    logoX = parseInt($logo.offset().left)
+    logoY = parseInt($logo.offset().top)

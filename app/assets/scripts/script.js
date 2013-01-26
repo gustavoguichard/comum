@@ -32,5 +32,9 @@ $(function() {
       opacity: setOpacity(shadowDistance)
     });
   };
-  return $(document).on('mousemove', moveShadow);
+  $(document).on('mousemove', moveShadow);
+  return $(window).on('resize', function() {
+    logoX = parseInt($logo.offset().left);
+    return logoY = parseInt($logo.offset().top);
+  });
 });
