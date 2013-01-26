@@ -116,30 +116,31 @@ body {
   font-family: Georgia, Times, "Times New Roman", serif;
   color: #222222;
   text-align: center;
+  min-width: 470px;
 }
 
-/* line 17, style.sass */
+/* line 18, style.sass */
 h1, h2, h3, h4 {
   font-family: "Fjalla One", sans-serif;
   text-transform: uppercase;
 }
 
-/* line 21, style.sass */
+/* line 22, style.sass */
 h3 {
   font-size: 1.33333em;
 }
 
-/* line 24, style.sass */
+/* line 25, style.sass */
 a {
   color: #00b7ff;
   font-weight: bold;
 }
 
-/* line 28, style.sass */
+/* line 29, style.sass */
 ul {
   list-style: none;
 }
-/* line 31, style.sass */
+/* line 32, style.sass */
 ul.roles {
   text-transform: lowercase;
 }
@@ -155,18 +156,18 @@ ul.roles {
   }
 }
 
-/* line 39, style.sass */
+/* line 40, style.sass */
 .we_are, .looking_for, .be_use, .endorse, #footer_share {
   padding: 1.66667em 1.11111em;
 }
 
-/* line 42, style.sass */
+/* line 43, style.sass */
 .looking_for, .endorse {
   color: white;
   background: #222222;
 }
 
-/* line 46, style.sass */
+/* line 47, style.sass */
 #main_header {
   width: 100%;
   padding: 5.55556em 0 7.22222em;
@@ -177,12 +178,12 @@ ul.roles {
   overflow: hidden;
 }
 @media only screen and (max-width: 980px) {
-  /* line 46, style.sass */
+  /* line 47, style.sass */
   #main_header {
     background-size: cover;
   }
 }
-/* line 57, style.sass */
+/* line 58, style.sass */
 #main_header #logo {
   text-indent: -119988px;
   overflow: hidden;
@@ -196,7 +197,7 @@ ul.roles {
   position: relative;
   z-index: 10;
 }
-/* line 63, style.sass */
+/* line 64, style.sass */
 #main_header #logo-shadow {
   text-indent: -119988px;
   overflow: hidden;
@@ -210,82 +211,82 @@ ul.roles {
   z-index: 2;
 }
 
-/* line 68, style.sass */
+/* line 69, style.sass */
 .we_are {
   overflow: hidden;
 }
-/* line 71, style.sass */
+/* line 72, style.sass */
 .we_are .group {
   width: 33%;
   position: relative;
   float: left;
 }
 @media only screen and (max-width: 768px) {
-  /* line 71, style.sass */
+  /* line 72, style.sass */
   .we_are .group {
     width: 100%;
   }
 }
 
-/* line 79, style.sass */
+/* line 80, style.sass */
 .group {
   width: 75%;
   margin: 0 auto;
   position: relative;
 }
 @media only screen and (max-width: 768px) {
-  /* line 79, style.sass */
+  /* line 80, style.sass */
   .group {
     width: 100%;
   }
 }
 
-/* line 86, style.sass */
+/* line 87, style.sass */
 .looking_for {
   overflow: hidden;
 }
-/* line 89, style.sass */
+/* line 90, style.sass */
 .looking_for h3, .looking_for p {
   float: left;
   width: 33%;
 }
 @media only screen and (max-width: 768px) {
-  /* line 89, style.sass */
+  /* line 90, style.sass */
   .looking_for h3, .looking_for p {
     clear: left;
     width: 100%;
     margin-bottom: 1.11111em;
   }
 }
-/* line 97, style.sass */
+/* line 98, style.sass */
 .looking_for h3 {
   margin-top: 1em;
 }
 
-/* line 100, style.sass */
+/* line 101, style.sass */
 .be_use, .endorse {
   min-height: 50px;
 }
-/* line 103, style.sass */
+/* line 104, style.sass */
 .be_use h3, .be_use p, .endorse h3, .endorse p {
   margin-bottom: 1.11111em;
 }
-/* line 106, style.sass */
+/* line 107, style.sass */
 .be_use h3, .endorse h3 {
   position: absolute;
   left: 0;
 }
 @media only screen and (max-width: 768px) {
-  /* line 106, style.sass */
+  /* line 107, style.sass */
   .be_use h3, .endorse h3 {
     position: static;
   }
 }
-/* line 112, style.sass */
+/* line 113, style.sass */
 .be_use .btns, .endorse .btns {
   margin-top: 2em;
 }
-/* line 115, style.sass */
+/* line 116, style.sass */
 .be_use a.btn, .endorse a.btn {
   color: white;
   background: #222222;
@@ -295,19 +296,19 @@ ul.roles {
   margin: 0.3em;
   white-space: nowrap;
 }
-/* line 124, style.sass */
+/* line 125, style.sass */
 .be_use a.btn:hover, .endorse a.btn:hover {
   background: #3c3c3c;
   text-shadow: 1px 1px 1px black;
   box-shadow: 0 0 8px black inset;
 }
 
-/* line 129, style.sass */
+/* line 130, style.sass */
 .brands {
   overflow: hidden;
   padding-top: 2em;
 }
-/* line 133, style.sass */
+/* line 134, style.sass */
 .brands img {
   -webkit-filter: grayscale(90%);
   -moz-filter: grayscale(90%);
@@ -318,14 +319,14 @@ ul.roles {
   transition: all 0.6s;
   padding: 0.5em;
 }
-/* line 138, style.sass */
+/* line 139, style.sass */
 .brands img:hover {
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
   filter: grayscale(0%);
 }
 
-/* line 142, style.sass */
+/* line 143, style.sass */
 #footer_share .fb-like {
   margin: 0 auto;
   display: block;

@@ -25,8 +25,10 @@ module.exports = (app, configuration)->
 
 module.exports.index = (req, res)->
   brands = [
-    {name: "Engage", img: "engage.png", url: "http://engage.is"}
     {name: "Matéria Brasil", img: "mb.png", url: "http://materiabrasil.com"}
+    {name: "Catarse", img: "catarse.png", url: "http://catarse.me"}
+    {name: "Multidão", img: "multidao.png", url: "http://multidao.art.br"}
+    {name: "Engage", img: "engage.png", url: "http://engage.is"}
     {name: "Nos.vc", img: "nosvc.png", url: "http://nos.vc"}
   ]
   res.render 'index', config: @config, brands: brands
