@@ -30,5 +30,6 @@ module.exports.index = (req, res)->
     {name: "Multidão", img: "multidao.png", url: "http://multidao.art.br"}
     {name: "Engage", img: "engage.png", url: "http://engage.is"}
     {name: "Nos.vc", img: "nosvc.png", url: "http://nos.vc"}
+    {name: "Estaleiro Liberdade", img: "estaleiro.png", url: "http://estaleiroliberdade.com.br"}
   ]
   res.render 'index', config: @config, brands: brands
