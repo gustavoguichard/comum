@@ -323,9 +323,9 @@ ul.roles {
 }
 /* line 141, style.sass */
 .brands img:hover {
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  filter: grayscale(0%);
+  -webkit-filter: hue-rotate(180deg);
+  -moz-filter: hue-rotate(180deg);
+  filter: hue-rotate(180deg);
 }
 
 /* line 145, style.sass */

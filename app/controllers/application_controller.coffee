@@ -32,5 +32,6 @@ module.exports.index = (req, res)->
     {name: "Nos.vc", img: "nosvc.jpg", url: "http://nos.vc"}
     {name: "Estaleiro Liberdade", img: "estaleiro.jpg", url: "http://estaleiroliberdade.com.br"}
     {name: "Semente negócios", img: "semente.jpg", url: "http://sementenegocios.com.br"}
+    {name: "Shoot the Shit", img: "shoottheshit.jpg", url: "http://shoottheshit.cc"}
   ]
   res.render 'index', config: @config, brands: brands
