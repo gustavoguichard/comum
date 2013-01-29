@@ -310,23 +310,25 @@ ul.roles {
 }
 /* line 134, style.sass */
 .brands img {
-  -webkit-filter: grayscale(90%);
-  -moz-filter: grayscale(90%);
-  filter: grayscale(90%);
+  -webkit-filter: grayscale(70%);
+  -moz-filter: grayscale(70%);
+  filter: grayscale(70%);
   -webkit-transition: all 0.6s;
   -moz-transition: all 0.6s;
   -o-transition: all 0.6s;
   transition: all 0.6s;
-  padding: 0.5em;
+  padding: 0.1em;
+  border-radius: 10px;
+  margin: 0.3em;
 }
-/* line 139, style.sass */
+/* line 141, style.sass */
 .brands img:hover {
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
   filter: grayscale(0%);
 }
 
-/* line 143, style.sass */
+/* line 145, style.sass */
 #footer_share .fb-like {
   margin: 0 auto;
   display: block;

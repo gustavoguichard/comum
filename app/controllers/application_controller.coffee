@@ -25,11 +25,12 @@ module.exports = (app, configuration)->
 
 module.exports.index = (req, res)->
   brands = [
-    {name: "Matéria Brasil", img: "mb.png", url: "http://materiabrasil.com"}
-    {name: "Catarse", img: "catarse.png", url: "http://catarse.me"}
-    {name: "Multidão", img: "multidao.png", url: "http://multidao.art.br"}
-    {name: "Engage", img: "engage.png", url: "http://engage.is"}
-    {name: "Nos.vc", img: "nosvc.png", url: "http://nos.vc"}
-    {name: "Estaleiro Liberdade", img: "estaleiro.png", url: "http://estaleiroliberdade.com.br"}
+    {name: "Matéria Brasil", img: "mb.jpg", url: "http://materiabrasil.com"}
+    {name: "Catarse", img: "catarse.jpg", url: "http://catarse.me"}
+    {name: "Multidão", img: "multidao.jpg", url: "http://multidao.art.br"}
+    {name: "Engage", img: "engage.jpg", url: "http://engage.is"}
+    {name: "Nos.vc", img: "nosvc.jpg", url: "http://nos.vc"}
+    {name: "Estaleiro Liberdade", img: "estaleiro.jpg", url: "http://estaleiroliberdade.com.br"}
+    {name: "Semente negócios", img: "semente.jpg", url: "http://sementenegocios.com.br"}
   ]
   res.render 'index', config: @config, brands: brands

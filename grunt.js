@@ -17,6 +17,10 @@ module.exports = function(grunt) {
         '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
         ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */'
     },
+    clean: {
+      // Be careful, never use this task alone, always use it after grunt copy!!!
+      folder: ['app/assets/images/*', 'app/assets/compressed']
+    },
     coffee: {
       modules: {
         src: ['app/assets/**/*.coffee']
@@ -50,8 +54,7 @@ module.exports = function(grunt) {
     },
     smushit:{
       imgs: {
-          src: 'app/assets/images',
-          dest: 'public/img'
+          src: 'app/assets/images'
       }
     },
     watch: {
@@ -63,5 +66,5 @@ module.exports = function(grunt) {
   });
 
   // Default task.
-  grunt.registerTask('pub', 'compass min cssmin smushit');
+  grunt.registerTask('pub', 'smushit');
 };
