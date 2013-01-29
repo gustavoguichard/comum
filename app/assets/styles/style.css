@@ -313,19 +313,19 @@ ul.roles {
   -webkit-filter: grayscale(70%);
   -moz-filter: grayscale(70%);
   filter: grayscale(70%);
-  -webkit-transition: all 0.6s;
-  -moz-transition: all 0.6s;
-  -o-transition: all 0.6s;
-  transition: all 0.6s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
   padding: 0.1em;
   border-radius: 10px;
   margin: 0.3em;
 }
 /* line 141, style.sass */
 .brands img:hover {
-  -webkit-filter: hue-rotate(180deg);
-  -moz-filter: hue-rotate(180deg);
-  filter: hue-rotate(180deg);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 /* line 145, style.sass */
