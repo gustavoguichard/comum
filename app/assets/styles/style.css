@@ -320,15 +320,16 @@ ul.roles {
   padding: 0.1em;
   border-radius: 10px;
   margin: 0.3em;
+  box-shadow: 0 0 0 1px #58739c;
 }
-/* line 141, style.sass */
+/* line 142, style.sass */
 .brands img:hover {
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
   filter: grayscale(0%);
 }
 
-/* line 145, style.sass */
+/* line 146, style.sass */
 #footer_share .fb-like {
   margin: 0 auto;
   display: block;
