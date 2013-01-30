@@ -10,6 +10,15 @@
     "jade": "latest",
     "coffee-script": "latest"
   },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-clean": "latest",
+    "grunt-coffee": "latest",
+    "grunt-compass": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-smushit": "latest",
+    "grunt-yui-compressor": "latest"
+  },
   "engines": {
     "node": "0.8.x",
     "npm": "1.1.x"
