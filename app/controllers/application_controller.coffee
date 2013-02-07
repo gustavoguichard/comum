@@ -36,5 +36,6 @@ module.exports.index = (req, res)->
     {name: "Imagina na Copa", img: "imaginanacopa.jpg", url: "http://imaginanacopa.com.br"}
     {name: "RUA - Rastro Urbano de Amor", img: "rua.jpg", url: "https://www.facebook.com/RUApoa"}
     {name: "Multitude", img: "multitude.jpg", url: "#"}
+    {name: "Estúdio Nômade", img: "estudionomade.jpg", url: "http://www.estudionomade.com.br"}
   ]
   res.render 'index', config: @config, brands: brands
