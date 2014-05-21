@@ -31,6 +31,7 @@ module.exports.index = (req, res)->
     {name: "Engage", img: "engage.jpg", url: "http://engage.is"}
     {name: "Nos.vc", img: "nosvc.jpg", url: "http://nos.vc"}
     {name: "Estaleiro Liberdade", img: "estaleiro.jpg", url: "http://estaleiroliberdade.com.br"}
+    {name: "1%", img: "umporcento.jpg", url: "http://umporcento.org"}
     {name: "Semente negócios", img: "semente.jpg", url: "http://sementenegocios.com.br"}
     {name: "Shoot the Shit", img: "shoottheshit.jpg", url: "http://shoottheshit.cc"}
     {name: "Imagina na Copa", img: "imaginanacopa.jpg", url: "http://imaginanacopa.com.br"}

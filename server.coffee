@@ -1,4 +1,3 @@
-# Module dependencies.
 express = require 'express'
 fs = require 'fs'
 http = require 'http'
